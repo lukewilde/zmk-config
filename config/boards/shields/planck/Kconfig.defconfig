@@ -1,0 +1,6 @@
+if PLANCK
+
+config ZMK_KEYBOARD_NAME
+    default "Planck"
+
+endif

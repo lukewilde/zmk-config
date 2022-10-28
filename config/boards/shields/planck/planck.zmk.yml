@@ -1,0 +1,7 @@
+file_format: "1"
+id: planck
+name: Planck
+type: shield
+requires: [nice_nano_v2]
+features:
+  - keys
