@@ -22,8 +22,8 @@
                &mt LCTRL ESC           &lt 4 A                   &kp S          &kp D   &kp F      &kp G   &kp H   &kp J           &kp K                       &kp L                   &kp SEMI           &mt RIGHT_CONTROL RETURN
  &mt LSHIFT LEFT_PARENTHESIS           &kp Z                   &kp X          &kp C   &kp V      &kp B   &kp N   &kp M       &kp COMMA                     &kp DOT                   &kp FSLH  &mt RIGHT_SHIFT RIGHT_PARENTHESIS
           &lt 5 LEFT_BRACKET  &kp LEFT_BRACE  &mt LEFT_ALT LESS_THAN  &kp LEFT_META   &mo 2  &kp SPACE  &trans   &mo 3  &kp RIGHT_META  &mt RIGHT_ALT GREATER_THAN  &mt RIGHT_ALT RIGHT_BRACE                &lt 5 RIGHT_BRACKET
-            >;m
-       '' };
+            >;
+        };
 
         colemak {
             bindings = <
