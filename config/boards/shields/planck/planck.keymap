@@ -38,9 +38,9 @@
 
         numbers {
             bindings = <
-&gresc &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp PLUS &kp ASTERISK &trans &kp UNDERSCORE &kp AMPERSAND &kp TILDE &kp PIPE &trans
-&trans &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp MINUS &kp EQUAL &kp GRAVE &kp EXCLAMATION &kp DOUBLE_QUOTES &kp AT_SIGN &kp QMARK &trans
-&trans &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans &kp NON_US_BACKSLASH &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &trans
+&gresc &kp PLUS &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp ASTERISK &trans &kp UNDERSCORE &kp AMPERSAND &kp TILDE &kp PIPE &trans
+&trans &kp MINUS &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp EQUAL &kp GRAVE &kp EXCLAMATION &kp DOUBLE_QUOTES &kp AT_SIGN &kp QMARK &trans
+&trans &kp NUMBER_0 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &trans &kp NON_US_BACKSLASH &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &trans
 &trans &trans &trans &trans &trans &kp DELETE &trans &trans &trans &trans &trans &trans
             >;
         };
