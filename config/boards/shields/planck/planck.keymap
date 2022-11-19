@@ -50,7 +50,7 @@
 
         numbers {
             bindings = <
-&gresc &kp AMPERSAND &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans &kp ASTERISK &kp PLUS &kp MINUS &kp PIPE2 &kp UNDERSCORE &trans
+&gresc &kp AMPERSAND &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans &kp ASTERISK &kp PLUS &kp MINUS &kp UNDERSCORE &kp PIPE2 &trans
 &trans &kp PIPE2 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_0 &kp NON_US_HASH &kp EXCLAMATION &kp AT_SIGN &kp EQUAL &kp QMARK &trans
 &trans &kp CARET &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &trans &kp PERCENT &kp DOUBLE_QUOTES &kp HASH &kp DOLLAR &kp NON_US_BACKSLASH &trans
 &trans &trans &trans &trans &trans &kp DELETE &trans &trans &trans &trans &trans &trans
