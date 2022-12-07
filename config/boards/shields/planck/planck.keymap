@@ -11,10 +11,9 @@
 #define COLEMAK 0
 #define QWERTY 1
 #define NUMBERS 2
-#define OLDNAVIGATION 3
-#define NAVIGATION 4
-#define BRACKETS 5
-#define DEBUG 6
+#define NAVIGATION 3
+#define BRACKETS 4
+#define DEBUG 5
 
 / {
     conditional_layers {
@@ -32,7 +31,7 @@
 
         colemak {
             bindings = <
-&lt NUMBERS TAB &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMICOLON &lt OLDNAVIGATION SINGLE_QUOTE
+&lt NUMBERS TAB &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMICOLON &lt NAVIGATION SINGLE_QUOTE
 &mt LCTRL ESC &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O &mt RIGHT_CONTROL RETURN
 &mt LSHIFT GRAVE &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp FSLH &mt RIGHT_SHIFT GRAVE
 &lt DEBUG LEFT_BRACKET &kp LC(LA(LSHIFT)) &kp LEFT_META &mt LEFT_ALT LESS_THAN &mo NAVIGATION &kp SPACE &trans &mo NUMBERS &mt LEFT_ALT GREATER_THAN &kp LC(LA(LSHIFT)) &kp LEFT &kp RIGHT
@@ -57,29 +56,20 @@
             >;
         };
 
-        oldnavigation {
-            bindings = <
-&trans &kp F1 &kp F2 &kp F4 &kp F5 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans
-&trans &kp C_MUTE &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT &trans &trans
-&trans &trans &trans &kp C_PREV &kp C_NEXT &trans &kp HOME &kp PAGE_UP &kp PG_DN &kp END &trans &trans
-&trans &trans &trans &trans &trans &kp BACKSPACE &trans &trans &trans &trans &trans &trans
-            >;
-        };
-
         navigation {
             bindings = <
-&trans &trans &trans &trans &trans &kp PAGE_UP &kp HOME &kp UP_ARROW &kp END &trans &trans &trans
-&trans &trans &kp LSHIFT &kp LEFT_ALT &kp LCTRL &trans &kp PG_DN &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT &trans &trans
-&trans &kp F1 &kp F2 &kp F4 &kp F5 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans
+&trans &kp C_MUTE &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &trans &kp PAGE_UP &kp HOME &kp UP_ARROW &kp END &kp DELETE &trans
+&trans &kp LSHIFT &trans &kp LEFT_ALT &kp LCTRL &trans &kp PG_DN &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT &kp BACKSPACE &trans
+&trans &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V) &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &kp BACKSPACE &trans &trans &trans &trans &trans &trans
             >;
         };
 
         brackets {
             bindings = <
-&trans &reset &trans &trans &trans &trans &trans &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &kp LEFT_BRACE &kp RIGHT_BRACE &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &trans &trans
+&trans &reset &kp F1 &kp F2 &kp F3 &kp F10 &trans &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans &trans &trans
+&trans &trans &kp F4 &kp F5 &kp F6 &kp F11 &trans &kp LEFT_BRACE &kp RIGHT_BRACE &trans &trans &trans
+&trans &trans &kp F7 &kp F8 &kp F9 &kp F12 &trans &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
@@ -87,9 +77,9 @@
         keyboard {
             bindings = <
 &trans &reset &bootloader &trans &trans &trans &trans &trans &trans &trans &bt BT_CLR &trans
-&trans &to COLEMAK &to QWERTY &trans &trans &trans &trans &trans &trans &bt BT_PRV &bt BT_NXT &trans
+&trans &to COLEMAK &to QWERTY &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &bt BT_PRV &bt BT_NXT
             >;
         };
     };
